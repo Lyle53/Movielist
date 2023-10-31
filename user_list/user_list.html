@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+</html>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">User List</a>
+        </div>
+    </nav>
+    <!--  User List -->
+    <div class="row" id="data-panel">
+        <!-- Render Movie List -->
+        <div class="col-sm-3">
+            <div class="mb-2">
+                <div class="card" >
+                    <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" class="card-img-top" alt="Movie Poster" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    <div class="card-body">
+                        <h5 class="card-title">Name</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+        <div class="modal fade" id="user-modal" tabindex="-1"aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="user-modal-title">Name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-around align-items-center" id="user-modal-body">
+                        <div class="row">
+                            <div class="col-sm-8" id="user-modal-image">
+                                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="User-poster" class="img-fluid">
+                            </div>
+                            <div class="col-sm-4">
+                                <p id="user-modal-email">123456789</p>
+                                <p id="user-modal-gender">123456789</p>
+                                <p id="user-modal-age">123456789</p>
+                                <p id="user-modal-region">123456789</p>
+                                <p><em id="user-modal-birthday">release data:2020</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+            crossorigin="anonymous">
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
